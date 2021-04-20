@@ -13,6 +13,8 @@ end
 group :production do
   gem 'pg'
 end
+# devise gem for authentication
+gem 'devise'
 
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
