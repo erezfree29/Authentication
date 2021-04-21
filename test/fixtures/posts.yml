@@ -3,9 +3,9 @@
 one:
   title: MyString
   body: MyString
-  refrence: 
+  user: one
 
 two:
   title: MyString
   body: MyString
-  refrence: 
+  user: two
