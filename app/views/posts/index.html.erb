@@ -1,0 +1,19 @@
+<h1>Posts</h1>
+
+<ul>
+  <% @posts.each do |post| %>
+        <li>
+          <%= link_to post.title, post %>
+        </li>
+        <% if user_signed_in? %>
+          <li>
+            <%= link_to post.user.email, post %>
+          </li>
+        <% end %>
+        
+  <% end %>
+</ul>
+
+
+<%= link_to "New Post", new_post_path %>
+<%= link_to "sign out",  destroy_user_session_path,method: :delete%>
