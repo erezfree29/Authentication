@@ -2,15 +2,12 @@
 
 <ul>
   <% @posts.each do |post| %>
-        <li>
-          <%= link_to post.title, post %>
-        </li>
-        <% if user_signed_in? %>
-          <li>
-            <%= link_to post.user.email, post %>
-          </li>
-        <% end %>
-        
+    <% if user_signed_in? %>
+            <li>Author:<%=post.user.email%></li>
+    <% end %>
+  
+      Title:<%=post.title%><br>
+      Content:<%=post.body%><br>
   <% end %>
 </ul>
 
