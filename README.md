@@ -37,7 +37,7 @@ In order to run the the project on your local machine, please run the following 
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/erezfree29Authentication/issues).
+Feel free to check the [Google](https://www.google.com)
 
 ## Show your support
 
