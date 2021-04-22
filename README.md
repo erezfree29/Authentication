@@ -25,6 +25,8 @@ In order to run the the project on your local machine, please run the following 
 > 3. Run bundle install to get the necesary gems.
 > 4. Run yarn install.
 > 5. Run rails db:migrate.
+> 6.Run Rails S
+> 7.Open your browser and navigate to http://localhost:3000/
 
  👤 **Erez Friemagor**
  
