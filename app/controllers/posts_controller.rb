@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!, except: [:index]
+  helper SiteHelper
   def new
     @post = Post.new
   end
@@ -15,6 +16,7 @@ class PostsController < ApplicationController
   end
 
   def index
+
     @posts = Post.all
   end
 
@@ -22,5 +24,11 @@ class PostsController < ApplicationController
 
   def post_params
     params.require(:post).permit(:title, :body)
+  end
+end
+
+module SiteHelper
+  def post_user_email(post)
+    post.user.email if user_signed_in?
   end
 end

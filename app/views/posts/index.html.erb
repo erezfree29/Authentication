@@ -2,10 +2,7 @@
 
 <ul>
   <% @posts.each do |post| %>
-    <% if user_signed_in? %>
-            <li>Author:<%=post.user.email%></li>
-    <% end %>
-  
+     <%=post_user_email(post)%>
       Title:<%=post.title%><br>
       Content:<%=post.body%><br>
   <% end %>
