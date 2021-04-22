@@ -20,7 +20,5 @@ module MembersOnly
   end
 end
 
- module SiteHelper
-  def post_user_email(user)
-    post.user.email if user_signed_in
-  end
+
+ 
