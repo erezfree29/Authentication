@@ -1,0 +1,8 @@
+<%@posts.each do |post|%>
+  <li>Title: <%=post.title%><br>
+  Content: <%=post.body%><br>
+  <%if user_signed_in?%>
+    Author:<%=post.user.email%>
+  <% end %>
+  </li>
+<% end %>

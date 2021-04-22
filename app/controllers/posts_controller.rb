@@ -27,7 +27,8 @@ class PostsController < ApplicationController
 end
 
 module SiteHelper
-  def post_user_email(post)
-    post.user.email if user_signed_in?
+
+  def print_posts(posts)
+      return render 'show'
   end
 end
