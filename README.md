@@ -21,7 +21,7 @@ To get this project up and running locally, you must already have ruby and the n
 In order to run the the project on your local machine, please run the following commands on your terminal:
 
 > 1. run `git clone https://github.com/erezfree29/Authentication/`
-> 2. run `cd re-form`
+> 2. run `cd Authentication`
 > 3. Run bundle install to get the necesary gems.
 > 4. Run yarn install.
 > 5. Run rails db:migrate.
