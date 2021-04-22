@@ -27,8 +27,7 @@ class PostsController < ApplicationController
 end
 
 module SiteHelper
-
-  def print_posts(posts)
-      return render 'show'
+  def print_posts(_posts)
+    render 'show'
   end
 end
