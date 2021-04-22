@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
 end
 
 module SiteHelper
-  def post_user_email(user)
+  def post_user_email(_user)
     current_user.id
   end
 end
